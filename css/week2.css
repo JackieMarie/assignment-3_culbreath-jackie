@@ -11,11 +11,52 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
   font-family: 'Libre Baskerville', serif;
   background-color: #fff;
-  color: #25262a;
+  color: #25262a; /*primary font color*/
 }
 
-.container {
-  padding: 15px;
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:900;
+  color: #fff;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 2% 0 2% 0;
+}
+
+p {
+  font-size: 16px;
+ }
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-bottom: 2%;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-bottom: 2%;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .grid-layout {
@@ -29,6 +70,7 @@ body {
     'aside aside aside aside'
     'footer footer footer footer';
 }
+
 .grid-layout > header {
   background: #0061ff;
   padding: 10px;
@@ -43,10 +85,12 @@ body {
   background: #c5c5c5;
   padding: 10px;
 }
+
 .grid-layout > footer  {
   background: #25262a;
   padding: 10px;
 }
+
 .grid-layout > aside  {
   background: #ffa500;
   padding: 10px;
@@ -56,16 +100,9 @@ body {
   grid-area: header;
 }
 
-.header__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight:900;
-  color: #fff;
-  text-align: center;
-}
-
 .header__logo--large {
-  width: 25%
-  maxwidth: 250px;
+  width: 25%;
+  max-width: 250px;
 }
 
 .nav {
@@ -75,8 +112,12 @@ body {
   color: #fff
 }
 
-.nav ul li {
-  list-style-type: none;
+.nav__list {
+   display: inline-block;
+   list-style-type: none;
+}
+
+.nav__list__item {
   display: inline-block;
   padding: 5px 10px;
   text-align: center;
@@ -86,47 +127,15 @@ body {
   grid-area: main;
 }
 
-.main__header {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  padding: 2% 0 2% 0;
-}
-
-.main__text {
-  font-size: 16px;
-}
 .main__article {
   margin: 5% 0 5% 0;
-}
-
-.article__header {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  padding-bottom: 2%;
-}
-
-.article__subheader {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  padding-bottom: 2%;
-}
-
-.article__text {
-  font-size: 14px;
 }
 
 .sidebar {
   grid-area: aside;
 }
 
-.sidebar__header {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  padding: 5% 0 5% 0;
-  color: #fff
-}
-
-.sidebar__list--item {
+.sidebar__list__item {
   list-style-type: none;
   font-size: 14px;
 }
@@ -143,26 +152,19 @@ body {
   grid-area: footer;
 }
 
-.footer__header {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: #fff;
-  padding: 10px 0 10px 0;
-  text-align: center;
-}
+/****VARIABLE CLASSES GO HERE****/
 
-.footer__subheader {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  color: #fff;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.footer__text {
-  color: #fff;
+.text--small {
   font-size: 10px;
   text-align: center;
+}
+
+.text--white {
+  color: #fff;
+}
+
+.title--padding {
+  padding: 5% 0 5% 0;
 }
 
 /**********MEDIA QUERIES START HERE************/
