@@ -1,8 +1,7 @@
-
 body {
-  font-family: 'Libre Baskerville', serif;
-  background-color: #fff;
-  color: #25262a; /*primary font color*/
+  font-family: $body-font;
+  background-color: $white;
+  color: $charcoal; /*primary font color*/
 }
 
 .grid-layout {
@@ -18,81 +17,65 @@ body {
 }
 
 .grid-layout > header {
-  background: #0061ff;
+  background: $ltblue;
   padding: 10px;
 }
 
 .grid-layout > nav  {
-  background: #000B8e;
+  background: $navy;
   padding: 10px;
 }
 
 .grid-layout > main  {
-  background: #c5c5c5;
+  background: $ltgrey;
   padding: 10px;
 }
 
 .grid-layout > footer  {
-  background: #25262a;
+  background: $charcoal;
   padding: 10px;
 }
 
 .grid-layout > aside  {
-  background: #ffa500;
+  background: $gold;
   padding: 10px;
 }
 
 .header {
-  grid-area: header;
-}
-
-.header__logo--large {
-  width: 25%;
-  max-width: 250px;
-}
+  grid-area: header;}
+  .header__logo--large {
+    width: 25%;
+    max-width: 250px;}
 
 .nav {
   grid-area: nav;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $header-font;
   font-size: 14px;
-  color: #fff
-}
-
-.nav__list {
-   display: inline-block;
-   list-style-type: none;
-}
-
-.nav__list__item {
-  display: inline-block;
-  padding: 5px 10px;
-  text-align: center;
-}
+  color: $white;}
+  .nav__list {
+     list-style-type: none;}
+    .nav__list__item {
+      display: inline-block;
+      padding: 5px 10px;
+      text-align: center;}
+      .nav__list__item:hover {
+        color: $gold;
+        text-decoration: underline;}
 
 .main {
-  grid-area: main;
-}
-
-.main__article {
-  margin: 5% 0 5% 0;
-}
+  grid-area: main;}
+  .main__article {
+    margin: 5% 0 5% 0;}
 
 .sidebar {
-  grid-area: aside;
-}
-
-.sidebar__list__item {
-  list-style-type: none;
-  font-size: 14px;
-}
-
-.sidebar__list--bold {
-  font-weight: bolder;
-}
-
-.sidebar__list--padding {
-  padding-bottom: 5%;
-}
+  grid-area: aside;}
+  .sidebar__list__item {
+    list-style-type: none;
+    font-size: 14px;}
+    .sidebar__list--bold {
+      font-weight: bolder;}
+    .sidebar__list--padding {
+      padding-bottom: 5%;}
 
 .footer {
   grid-area: footer;
@@ -105,10 +88,6 @@ body {
   text-align: center;
 }
 
-.text--white {
-  color: #fff;
-}
-
 .title--padding {
   padding: 5% 0 5% 0;
 }
@@ -119,7 +98,7 @@ body {
 
   @media(min-width: 675px){
     body {
-      background-color: #ff0050;
+      background-color: $red;
   }
 }
 
@@ -129,7 +108,7 @@ body {
 
   @media(min-width: 999px){
     body {
-      background-color: #008DA3;
+      background-color: $cerulean;
   }
 
   .grid-layout {
@@ -147,7 +126,7 @@ body {
 
   @media(min-width: 1280px){
     body {
-      background-color: #ffdc9d;
+      background-color: $gold;
   }
 }
 
