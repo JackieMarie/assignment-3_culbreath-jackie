@@ -1,5 +1,8 @@
 # Assignment 3
 ## Jackie Culbreath
+
+>I have read the Code Requirements Reference Sheet. My code follows the requirements.
+
 ---
 ## BARCELONA
 
@@ -17,4 +20,4 @@
 6. Light Grey: #c5c5c5
 
 ### Comments
-Issues with the checkout master and permission being denied to README and index files.
+Added sass to my project. Issues with the checkout master and permission being denied to README and index files which is wiping out some of my updates in the files located in my files explorers. Unable to upload the files to my website. Updated README file on master and part-1-b on Github.
